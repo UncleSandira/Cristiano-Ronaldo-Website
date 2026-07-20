@@ -1,0 +1,7 @@
+.hero-image{
+    background-image: url("/Images/Ronaldoheading.jpg");
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
