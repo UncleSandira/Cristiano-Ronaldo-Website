@@ -1,7 +1,43 @@
 .hero-image{
-    background-image: url("/Images/Ronaldoheading.jpg");
-    height: 350px;
+    background-image: url("./Images/Ronaldoheading.jpg");
+    height: 627px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    background-color: midnightblue;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    font-size: 25px;   
+}
+p{
+    margin-top: 35px;
+}
+.team-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 35px; 
+    padding: 30px 50px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.team-photo img {
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+    display: block;
+}
+
+.team-photo a {
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
 }
