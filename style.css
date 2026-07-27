@@ -37,7 +37,22 @@ p{
 }
 
 .team-photo a {
-    border-radius: 12px;
     overflow: hidden;
     display: block;
+    pointer-events: none;
+    cursor: default;
+}
+.Colonge-photo img{
+    width:100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+    display: block;
+}
+.Colonge-photo a{
+    overflow: hidden;
+    display: block;
+    pointer-events: none;
+    cursor: default;
 }
