@@ -8,6 +8,9 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url("./Images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner{
     background-color: midnightblue;
@@ -42,17 +45,42 @@ p{
     pointer-events: none;
     cursor: default;
 }
+.Colonge-photo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding: 30px 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
 .Colonge-photo img{
-    width:100%;
+    width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: top center;
     border-radius: 12px;
     display: block;
+    
 }
-.Colonge-photo a{
-    overflow: hidden;
-    display: block;
-    pointer-events: none;
-    cursor: default;
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 50px;
+}
+.socials a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.socials img.yt-icon{
+    width:140px;
+    height:auto;
 }
