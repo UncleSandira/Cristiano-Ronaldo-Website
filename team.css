@@ -10,4 +10,68 @@ body{
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color:midnightblue
+}
+.teams {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.leftimg,
+.rightimg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.rightimg {
+  flex-direction: row-reverse;
+}
+
+.leftimg img,
+.rightimg img {
+  width: 42%;
+  max-width: 42%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.leftimg .text,
+.rightimg .text {
+  width: 50%;
+  max-width: 50%;
+}
+
+.leftimg .text h2,
+.rightimg .text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.leftimg .text p,
+.rightimg .text p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .leftimg, 
+  .rightimg {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .leftimg img, 
+  .rightimg img,
+  .leftimg .text,
+  .rightimg .text {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
 }
