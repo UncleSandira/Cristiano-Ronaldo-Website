@@ -1,0 +1,13 @@
+.hero-image{
+    background-image: url("./Team page photos/heading.jpg");
+    height: 627px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
