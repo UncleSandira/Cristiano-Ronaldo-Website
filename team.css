@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    background-color: midnightblue;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-title{
+    margin: 0; 
+    padding-top: 50px; 
+    text-align: center;
+}

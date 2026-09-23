@@ -42,8 +42,7 @@ p{
 .team-photo a {
     overflow: hidden;
     display: block;
-    pointer-events: none;
-    cursor: default;
+   
 }
 .Colonge-photo{
     display: grid;
