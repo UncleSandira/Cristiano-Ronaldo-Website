@@ -1,3 +1,5 @@
+/*--- background and page setting---*/
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*--- Title banner ---*/
 .banner {
     width: 100%;
     background-color: midnightblue;
@@ -15,74 +17,77 @@ body {
     padding: 40px 0;
     font-size: 80px;
     font-weight: bold;
+    /* centering title text */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
 }
-
+/* --- Main layout --- */
 .teams {
     width: 100%;
-    max-width: 1600px;
-    margin: 30px auto;
+    max-width: 1600px; /* stops the imges from getting too big on large screens */
+    margin: 30px auto; /* centers the content on the page */
     padding: 0 15px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* staccking each row on top of eachother without touching and leaving a gap */
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
+/* --- Team rows (imagea and text) --- */
 .leftimg, .rightimg {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
+    flex-direction: row; /* places the images and text next to eachother */
+    align-items: center; /* aliging the text */
+    gap: 25px; /* puts space between the images and the text */
     width: 100%;
 }
-
+/* --- Team photos --- */
 .leftimg img, .rightimg img {
     width: 480px;
     height: 320px;
-    object-fit: cover;
-    border-radius: 18px;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    object-fit: cover; /* stops the image form streching or getting sqaushed */
+    border-radius: 18px; /* rounds the corners of the image */
+    flex-shrink: 0; /* keeps the photos at their fixed sizes */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* adds a subtle shadow to the images */
 }
-
+/* --- Text content next to the images --- */
 .text {
-    flex: 1;
+    flex: 1; /* Makes the text box fill up all the remaining space in the row */
 }
-
+/* --- HEading for text section --- */
 .text h2 {
     margin-top: 0;
     margin-bottom: 12px;
     font-size: 32px;
     color: #fafffa;
 }
-
+/* --- description text for imges --- */
 .text p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.6; /* adds space between lines and text */
     color: #f9fafc;
     margin: 0;
 }
+/* --- Back button --- */
 .back-btn {
-    position: absolute;
+    position: absolute; /* keeps the button in a fixed position on the top left of the banner */
     top: 20px;
     left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; /* makes the hover effect seem smoother */
 }
-
+/* --- Back button image --- */
 .back-btn img {
     width: 50px;
     height: 50px;
     object-fit: contain;
-    filter: invert(1);
+    filter: invert(1); /* tunred the black back button image into a white image to make it stand out more on the page */
 }
-
+/* --- Back button hover effect --- */
 .back-btn:hover {
-    transform: translateX(-4px);
+    transform: translateX(-4px); /* moves the button slightly to the left when you hover over it */
 }
