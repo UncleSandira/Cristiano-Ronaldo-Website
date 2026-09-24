@@ -1,71 +1,86 @@
-.hero-image{
+/* --- Hero Banner Section --- */
+.hero-image {
     background-image: url("./Images/Ronaldoheading.jpg");
     height: 627px;
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Stretches the image so it fills the hero box */
+    background-position: center; /* Centers the image inside the hero block */
     background-repeat: no-repeat;
 }
-body{
-    margin: 0;
+
+/* --- Page Background and Margins --- */
+body {
+    margin: 0; /* Removes default browser margin around the edges */
     padding: 0;
     background-image: url("./Images/background.png");
     background-repeat: no-repeat;
-    background-size: cover;
-}
-.banner{
-    background-color: midnightblue;
-    color: rgb(255, 255, 255);
-    text-align:center;
-    font-size: 25px;   
-}
-p{
-    margin-top: 35px;
-}
-.team-photo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 35px; 
-    padding: 30px 50px; 
-    width: 100%;
-    box-sizing: border-box;
+    background-size: cover; /* Makes the main background stretch to fit the screen */
 }
 
+/* --- Top Text Banner --- */
+.banner {
+    background-color: midnightblue;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;   
+}
+
+/* --- Paragraph Spacing --- */
+p {
+    margin-top: 35px; /* Adds space above paragraphs so text isn't squished */
+}
+
+/* --- Team Photos Grid Section --- */
+.team-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid layout */
+    gap: 35px; /* Puts space between the photos */
+    padding: 30px 50px; 
+    width: 100%;
+    box-sizing: border-box; /* Includes padding in the total width calculation */
+}
+
+/* Team Photo Images */
 .team-photo img {
     width: 100%;
-    aspect-ratio: 4 / 3; 
-    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Keeps all photos at a consistent shape */
+    object-fit: cover; /* Stops the pictures from looking stretched or distorted */
     object-position: top center;
-    border-radius: 12px;
+    border-radius: 12px; /* Rounds the corners of the images */
     display: block;
 }
 
+/* Team Links around photos */
 .team-photo a {
     overflow: hidden;
     display: block;
-   
 }
-.Colonge-photo{
+
+/* --- Cologne Photos Grid Section --- */
+.Colonge-photo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for the photos */
     gap: 35px;
     padding: 30px 50px;
     width: 100%;
     box-sizing: border-box;
 }
-.Colonge-photo img{
+
+/* Cologne Photo Images */
+.Colonge-photo img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: top center;
     border-radius: 12px;
     display: block;
-    
 }
+
+/* --- Social Media Links Section --- */
 .socials {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: center !important; /* Centers all social icons horizontally */
   align-items: center !important;
-  gap: 80px !important;
+  gap: 80px !important; /* Sets spacing between each social media icon */
   padding: 30px 0 !important;
   width: 100% !important;
 }
@@ -74,14 +89,16 @@ p{
   display: inline-block !important;
 }
 
+/* Standard Social Media Icons */
 .socials img {
   width: 70px !important;
   height: 70px !important;
-  object-fit: contain !important;
+  object-fit: contain;
   border-radius: 12px !important;
 }
 
+/* Custom sizing for the YouTube logo */
 .socials img.yt-icon {
-  width: 160px !important;
+  width: 160px !important; /* Made wider so the YouTube logo isn't cut off */
   height: auto !important;
 }
